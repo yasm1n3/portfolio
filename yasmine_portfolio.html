@@ -4,18 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yasmine Mamere | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --beige: #f5f1ea;
-      --brown: #5e4635;
-      --accent: #a67c52;
-      --text: #3e2f23;
-      --highlight: #e6d3bd;
+      --beige: #fdfbf8;
+      --brown: #4b2e22;
+      --accent: #d99156;
+      --highlight: #f1e1d1;
+      --text: #2c1e14;
+      --shadow: rgba(0, 0, 0, 0.05);
     }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Karla', sans-serif;
       background-color: var(--beige);
       color: var(--text);
       line-height: 1.6;
@@ -24,8 +26,13 @@
     header {
       background-color: var(--brown);
       color: white;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       text-align: center;
+      box-shadow: 0 2px 5px var(--shadow);
+    }
+
+    nav {
+      margin-top: 1rem;
     }
 
     nav a {
@@ -33,6 +40,11 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.75;
     }
 
     .hero {
@@ -42,33 +54,42 @@
     }
 
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
 
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--brown);
+    }
+
     .section {
-      padding: 2rem;
+      padding: 3rem 1.5rem;
       max-width: 900px;
       margin: auto;
     }
 
     .section h2 {
-      border-left: 5px solid var(--accent);
-      padding-left: 0.5rem;
+      font-size: 2rem;
+      color: var(--brown);
+      border-left: 6px solid var(--accent);
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .project {
       background: white;
-      margin: 1rem 0;
-      padding: 1rem;
-      border-left: 4px solid var(--accent);
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-left: 6px solid var(--accent);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px var(--shadow);
     }
 
     .project img {
       max-width: 100%;
-      border-radius: 4px;
+      border-radius: 6px;
+      margin: 1rem 0;
     }
 
     footer {
@@ -76,6 +97,16 @@
       padding: 2rem;
       background-color: var(--brown);
       color: white;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -91,7 +122,7 @@
 
   <section class="hero">
     <h1>👋 Hi, I'm Yasmine!</h1>
-    <p>Mechanical Engineer passionate about real-world problem solving.</p>
+    <p>Mechanical Engineer passionate about hands-on problem solving — and a splash of fun!</p>
   </section>
 
   <section class="section" id="about">
@@ -103,18 +134,18 @@
     <h2>Projects</h2>
 
     <div class="project">
-      <h3>the betterStrap</h3>
+      <h3>the betterStrap 🎧</h3>
       <img src="images/betterstrap.jpg" alt="the betterStrap project image" />
+      <p><em>Custom wearable that automatically unbuckles after a fall – created with safety and dignity in mind.</em></p>
+    </div>
+
+    <div class="project">
+      <h3>Neural Tech Project 🧠</h3>
       <p><!-- Add your description here --></p>
     </div>
 
     <div class="project">
-      <h3>Neural Tech Project</h3>
-      <p><!-- Add your description here --></p>
-    </div>
-
-    <div class="project">
-      <h3>Headphone Charger</h3>
+      <h3>Headphone Charger 🔌</h3>
       <p><!-- Add your description here --></p>
     </div>
 
@@ -126,7 +157,7 @@
   </section>
 
   <footer>
-    <p>Made with ☕ and lots of love!</p>
+    <p>Made with ☕ and lots of love! – Yasmine Mamere</p>
   </footer>
 </body>
 </html>
