@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yasmine Mamere | Portfolio</title>
+  <style>
+    :root {
+      --beige: #f5f1ea;
+      --brown: #5e4635;
+      --accent: #a67c52;
+      --text: #3e2f23;
+      --highlight: #e6d3bd;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--beige);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--brown);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      background-color: var(--highlight);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      border-left: 5px solid var(--accent);
+      padding-left: 0.5rem;
+    }
+
+    .project {
+      background: white;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--brown);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yasmine Mamere</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>👋 Hi, I'm Yasmine!</h1>
+    <p>Mechanical Engineer passionate about real-world problem solving.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>Early career Mechanical Engineer with hands-on experience in the full development lifecycle of electro-mechanical systems, from prototyping to production support in regulated environments. Skilled in CAD design, testing, and design for manufacturing. Passionate about applying precise, practical engineering solutions to real-world challenges across healthcare and high-precision industries.</p>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>the betterStrap</h3>
+      <img src="images/betterstrap.jpg" alt="the betterStrap project image" />
+      <p><!-- Add your description here --></p>
+    </div>
+
+    <div class="project">
+      <h3>Neural Tech Project</h3>
+      <p><!-- Add your description here --></p>
+    </div>
+
+    <div class="project">
+      <h3>Headphone Charger</h3>
+      <p><!-- Add your description here --></p>
+    </div>
+
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>📫 <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank">LinkedIn</a> | ✉️ <a href="mailto:your@email.com">your@email.com</a></p>
+  </section>
+
+  <footer>
+    <p>Made with ☕ and lots of love!</p>
+  </footer>
+</body>
+</html>
